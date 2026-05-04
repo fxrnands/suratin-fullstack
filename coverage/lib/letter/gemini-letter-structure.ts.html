@@ -1,0 +1,442 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for lib/letter/gemini-letter-structure.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">lib/letter</a> gemini-letter-structure.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { LetterKind } from '@/components/letter-builder/types'
+&nbsp;
+import { LETTER_HEADER_CITY_DEFAULT } from '@/lib/letter/indonesian-templates'
+&nbsp;
+/** Panduan struktur surat Indonesia per jenis — dipakai di prompt Gemini agar konsisten dengan template statis. */
+const KIND_BLUEPRINT: Record&lt;LetterKind, string&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+  lamaran: `
+Jenis: SURAT LAMARAN KERJA (melamar pekerjaan).
+Struktur isi yang diharapkan:
+1. Kop tanggal kanan atas dalam satu string: "[Kota], [tanggal Indonesia panjang]" — gunakan kota yang masuk akal dari nama perusahaan atau default "${LETTER_HEADER_CITY_DEFAULT}" jika tidak terinferensi.
+2. Blok alamat penerima (multi-baris dalam satu string atau beberapa elemen dipisah "") mengikuti pola:
+   Kepada Yth.
+   Bapak/Ibu Personalia atau Pimpinan
+   [nama perusahaan dari draft]
+   Di tempat
+3. Satu baris "Perihal: Lamaran pekerjaan untuk posisi [posisi]" (boleh tambah baris "Lampiran: …" hanya jika masuk akal dari draft, jangan mengada-ngada).
+4. Baris sendiri "Dengan hormat," lalu "" lalu "Saya yang bertanda tangan di bawah ini:" lalu "" lalu blok identitas (satu baris per label, hanya jika data tersedia di JSON draft):
+   Nama: [draft.fullName]
+   Tempat, Tanggal Lahir: [draft.lamaran.birthPlaceDate] — hanya jika tidak kosong
+   Nomor Telepon: [draft.lamaran.phone] — hanya jika tidak kosong
+   Email: [draft.lamaran.email] — hanya jika draft.lamaran.includeEmailInLetter true DAN email tidak kosong
+5. Setelah blok identitas, "" lalu ISI UTAMA wajib minimal TIGA paragraf terpisah; gunakan elemen "" di antara paragraf agar jelas di layout/PDF:
+   - Paragraf 1: maksud melamar (posisi &amp; perusahaan dari draft).
+   - Paragraf 2: pendidikan, pengalaman, kompetensi (draft.lamaran.education &amp; draft.lamaran.skills), tanpa fakta baru.
+   - Paragraf 3: penutup (harapan, ucapan hormat; boleh menyebut lamiran/CV dilampirkan bila wajar).
+6. Lalu "" lalu satu kalimat penutup formal (mis. ucapan terima kasih atas perhatian) sebelum blok penandatanganan.
+7. Penutup + "Hormat saya," + nama pemohon pada elemen terpisah.
+Jangan menggabungkan seluruh isi surat menjadi satu paragraf panjang tunggal.
+`,
+&nbsp;
+  resign: `
+Jenis: SURAT PENGUNDURAN DIRI (susunan mengikuti surat lamaran: kop, alamat, perihal, pembuka, blok identitas, isi paragraf terpisah, penutup, tanda tangan).
+1. Kop tanggal kanan atas: "[Kota], [tanggal Indonesia panjang]" — kota dari konteks perusahaan atau default "${LETTER_HEADER_CITY_DEFAULT}".
+2. Blok alamat penerima (multi-baris dalam satu string atau beberapa elemen dipisah ""):
+   Kepada Yth.
+   Bapak/Ibu Pimpinan
+   [nama perusahaan dari draft.resign.company]
+   Di tempat
+3. Satu baris "Perihal: Pengunduran diri dari posisi [draft.resign.position]" (tanpa nama pemohon di baris Perihal).
+4. Baris sendiri "Dengan hormat," lalu "" lalu "Saya yang bertanda tangan di bawah ini:" lalu "" lalu blok identitas (satu baris per label, wajib untuk surat ini):
+   Nama: [draft.fullName]
+   Jabatan: [draft.resign.position]
+   Perusahaan: [draft.resign.company]
+   Jangan menambahkan baris Email atau alamat surel — surat pengunduran diri tidak memuat email.
+5. Setelah blok identitas, "" lalu isi utama dalam beberapa paragraf terpisah; WAJIB gunakan elemen "" antarparagraf:
+   - Paragraf 1: pengunduran diri dan tanggal efektif (draft.resign.effectiveDate).
+   - Jika draft.resign.reason tidak kosong: paragraf terpisah berisi alasan singkat dan sopan.
+   - Paragraf komitmen transisi / penyerahan tugas.
+   - Paragraf ucapan terima kasih.
+6. Lalu "" lalu satu kalimat penutup formal sebelum blok penandatanganan.
+7. "Hormat saya," dan nama pada elemen terpisah.
+Jangan menggabungkan identitas dan isi utama dalam satu paragraf panjang; jangan menyalin email dari draft ke surat.
+`,
+&nbsp;
+  permohonan: `
+Jenis: SURAT PERMOHONAN / PENGAJUAN UMUM.
+Struktur:
+1. Kop tanggal + blok Kepada Yth. → Bapak/Ibu Pimpinan → [institusi] → Di tempat.
+2. Perihal: Permohonan [judul ringkas dari draft.permohonan.purpose].
+3. "Dengan hormat," lalu "Yang bertanda tangan di bawah ini: [nama draft.fullName]."
+4. Satu atau dua paragraf yang menjelaskan untuk apa permohonan diajukan — gunakan isi draft.permohonan.whatFor (boleh diperhalus redaksi, jangan menambah fakta baru).
+5. Paragraf berikutnya berisi uraian detail dari draft.permohonan.details.
+6. Penutup formal + Hormat saya + nama.
+`,
+&nbsp;
+  izin: `
+Jenis: SURAT IZIN / DISPENSASI (ringkas, sopan, bukan surat argumentatif).
+Data JSON (wajib dipakai tanpa menambah fakta baru):
+- draft.fullName; draft.izin.employeeId (opsional, setelah identitas bila ada).
+- draft.izin.recipientName (orang/jabatan yang dituju), draft.izin.institution (nama institusi).
+- draft.izin.leaveType → jenis izin (sakit / keluarga / acara / administrasi / lainnya) dalam kalimat sopan.
+- draft.izin.dateFrom, draft.izin.dateTo → rentang tanggal jelas dalam bahasa Indonesia di isi surat.
+- draft.izin.reason (singkat, 1–2 kalimat).
+- draft.izin.additionalDetails (opsional: acara, lokasi, medis ringan, dll.).
+- draft.izin.hasAttachment + draft.izin.attachmentNote → kalimat lampiran singkat jika relevan.
+- draft.tone: formal / persuasif (lembut) / tegas — tetap hormat.
+&nbsp;
+Struktur isi:
+1. Kop tanggal + blok alamat: Kepada Yth. + saluran (sekolah/universitas: Kepala Sekolah atau Kepala Bagian Akademik; lainnya: Bapak/Ibu Pimpinan) + baris draft.izin.recipientName + baris draft.izin.institution + Di tempat.
+2. Perihal: izin + jenis + rentang tanggal.
+3. Pembuka + identitas + izin (tanggal + jenis + alasan singkat).
+4. Detail tambahan hanya jika draft.izin.additionalDetails tidak kosong.
+5. Janji komunikasi/keterpaduan tugas ringkas.
+6. Lampiran hanya jika hasAttachment.
+7. Penutup singkat + Hormat saya + draft.fullName.
+`,
+&nbsp;
+  pengaduan: `
+Jenis: SURAT PENGADUAN RESMI (struktur argumentatif: pembuka → kronologi → dampak → penegasan → tuntutan solusi → penutup).
+Data JSON (wajib dipakai tanpa menambah fakta baru):
+- draft.fullName, draft.pengaduan.contactPhone, draft.pengaduan.contactEmail (sertakan di identitas jika tidak kosong; email/telepon opsional tapi disarankan).
+- draft.pengaduan.institution, draft.pengaduan.divisionOrBranch (jika ada: sertakan agar surat terarah ke unit/cabang).
+- draft.pengaduan.problemCategory (label jenis masalah dalam bahasa surat).
+- draft.pengaduan.issue = kronologi inti (waktu, peristiwa, pihak terlibat).
+- draft.pengaduan.impact (jika tidak kosong: dampak ke pengadu).
+- draft.pengaduan.transactionOrCustomerId, draft.pengaduan.incidentDate (jika ada: masukkan sebagai bukti/kredibilitas).
+- draft.pengaduan.desiredOutcome + draft.pengaduan.desiredOutcomeOther (jika outcome "lainnya", gunakan teks other sebagai inti tuntutan) + draft.pengaduan.resolution (catatan tambahan harapan, opsional).
+- draft.pengaduan.urgency: jika "mendesak" atau "sangat_mendesak", sesuaikan ketegasan nada tanpa melanggar sopan santun.
+- draft.pengaduan.priorContact / draft.pengaduan.priorContactResponse: jika priorContact "ya", paragraf singkat tentang upaya kontak sebelumnya dan respon instansi (eskalasi).
+&nbsp;
+Alur isi (gunakan "" antar blok logis):
+1. Kop + blok alamat ke institusi (nama + divisi bila ada) + Di tempat.
+2. Perihal menyebut pengaduan dan ringkas jenis masalah.
+3. Pembuka formal + identitas pengadu + kontak bila ada.
+4. Paragraf "Uraian kronologi" berisi draft.issue.
+5. Jika draft.impact tidak kosong: paragraf "Dampak yang dialami".
+6. Jika ada transactionOrCustomerId atau incidentDate: satu paragraf ringkas "Data pendukung" (tanpa mengada-ngada).
+7. Paragraf penegasan relevansi dengan jenis masalah (problemCategory).
+8. Paragraf "Harapan penyelesaian" yang actionable: gabungkan label outcome yang dipilih + desiredOutcomeOther (jika lainnya) + resolution tambahan; sertakan CTA jelas (mis. tenggat waktu hanya jika ada di draft).
+9. Jika priorContact ya: paragraf eskalasi berdasarkan priorContactResponse.
+10. Penutup profesional + Hormat saya + nama.
+&nbsp;
+Tone: ikuti draft.tone (formal / tegas / persuasif) — hindari nada emosional berlebihan maupun surat yang terlalu lemah tanpa tuntutan.
+`,
+}
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >geminiLetterStructureInstructions(k</span>ind: LetterKind): string {
+<span class="cstat-no" title="statement not covered" >  return KIND_BLUEPRINT[kind].trim()</span>
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-05-04T10:02:12.208Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

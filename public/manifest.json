@@ -1,0 +1,17 @@
+{
+  "name": "Suratin",
+  "short_name": "Suratin",
+  "description": "Buat surat resmi dengan AI — lamaran, resign, izin, permohonan, pengaduan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#0891B2",
+  "icons": [
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
