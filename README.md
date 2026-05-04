@@ -1,4 +1,4 @@
-# Suratin (Frontend)
+# Suratin (Full-stack)
 
 Web app for **SURATIN** — an AI-assisted **formal letter generator** for people in Indonesia: job applications, resignations, leave notices, formal requests, and complaint letters. Users fill a short form, get structured Indonesian formal copy, and can **download a PDF**.
 
